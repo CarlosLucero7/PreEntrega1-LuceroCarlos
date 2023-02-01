@@ -2,6 +2,7 @@
     color: #8BD450;
     font-family:Helvetica;
     font-size: 3rem;
+    padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   
@@ -14,6 +15,12 @@
 .navlink{
     text-decoration: none;
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
 }
 

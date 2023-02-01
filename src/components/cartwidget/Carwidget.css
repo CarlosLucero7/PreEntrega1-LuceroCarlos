@@ -1,0 +1,9 @@
+.carrito{
+    height: 35px;
+    width: 50px;
+    background-color: aliceblue;
+}
+
+#cantidad{
+    color: red;
+}
