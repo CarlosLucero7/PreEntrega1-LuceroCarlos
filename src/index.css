@@ -17,15 +17,3 @@ code {
     monospace;
 }
 
-#titulo{
-  color: #8BD450;
-  font-family:Helvetica;
-  font-size: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
-}
-
-.menu{
-  background-image: linear-gradient(to left top, #734f9a, #5a427f, #433563, #2f2749, #1d1a2f);
-}
