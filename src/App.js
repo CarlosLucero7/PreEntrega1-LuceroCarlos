@@ -1,9 +1,13 @@
+import Navbar from './components/navbar/NavBar';
 import Itemlistcontainer from "./components/itemlistcontainer/Itemlistcontainer";
+import ItemCount from './components/ItemCount/ItemCount';
 
 function App() {
   return (
+
     <div className="App">
-      <Itemlistcontainer nombre = 'Juan' apellido = 'Perez' />
+      <Navbar />
+      <Itemlistcontainer/>
     </div>
   );
 }

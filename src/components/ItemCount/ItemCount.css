@@ -1,0 +1,26 @@
+.contador{
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cant{
+    margin-right: 0.5rem;
+}
+
+.cantidad{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.boton{
+    width: 1rem;
+    
+}
+.carro{
+    margin-left: 0.75rem;
+}
+
+

@@ -1,0 +1,21 @@
+#prod{
+    background-image: linear-gradient(to bottom, #3f6d4e, #4a8754, #5aa057, #70ba55, #8bd450);
+}
+
+.prodCard{
+    border: 1px solid #965FD4;
+    background-color: #1D1A2F;
+    margin: 0.7rem;
+    display: inline-block;
+    color: #8BD450;
+}
+.preecio{
+    margin-top: 0.5rem;
+}
+.texto{
+    margin-left: 5px;
+}
+#prodImg{
+    height: 225px;
+
+}
