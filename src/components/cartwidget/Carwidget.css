@@ -1,10 +1,18 @@
 .carrito{
-    height: 35px;
-    width: 50px;
-    background-color: aliceblue;
+    margin-top: -1rem;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 70px;
+    background-color: #1D1A2F;
+}
+
+.carroImg{
+    height: 45px;
 }
 
 #cantidad{
+    font-size: 1rem;
     padding-left: 0.25rem;
-    color: red;
+    color: orangered;
 }
