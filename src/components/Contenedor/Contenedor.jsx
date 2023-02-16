@@ -8,7 +8,7 @@ const Contenedor = ( {prod}) => {
         <h4 className="texto">Caregoria: {prod.categoria}</h4>
         <h4 className="texto">Material: {prod.material}</h4>
         <div className="compra">
-            <h2 className="precio">Precio: ${prod.precio}</h2>
+            <h2 className="precio">${prod.precio}</h2>
             <ItemCount/>
         </div>
         
