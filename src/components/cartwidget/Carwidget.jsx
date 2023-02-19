@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom"
 import "./Carwidget.css"
-import {BsCart4} from 'react-icons/bs'
 
 const Carwidget=() =>{
     return(
