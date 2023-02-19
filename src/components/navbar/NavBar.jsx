@@ -11,16 +11,16 @@ const Navbar =() =>{
                 </Link>
                 <ul className="lista">
                     <li>
-                        <a className="navlink " href="#">Figuras</a>
+                        <Link to='/category/Figura'><a className="navlink " href="#">Figuras</a></Link>
                     </li>
                     <li>
-                        <a className="navlink" href="#">Mates</a>
+                        <Link to='/category/Mate'><a className="navlink" href="#">Mates</a></Link>
                     </li>
                     <li>
-                        <a className="navlink" href="#">Llaveros</a>
+                        <Link to='/category/Llavero'><a className="navlink" href="#">Llaveros</a></Link>  
                     </li>
                     <li>
-                        <a className="navlink" href="#">Repuestos</a>
+                        <Link to='/category/Soporte'><a className="navlink" href="#">Soportes</a></Link>
                     </li>
                     <Carwidget />
                 </ul>

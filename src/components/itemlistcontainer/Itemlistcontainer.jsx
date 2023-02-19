@@ -1,15 +1,21 @@
 import { useEffect, useState } from "react"
 import ItemList from "../ItemList/ItemList"
 import {productos} from "../../productoTienda"
+import { useParams } from "react-router-dom"
 import "./Itemlistcontainer.css"
 
 const Itemlistcontainer = (props) => {
+
+  const {categoryId} = useParams()
   
   const [items, setItems] = useState([])
 
   useEffect ( () =>{
+    
+    const prodFiltro = productos.filter ((product => product.categoria === categoryId))
+
     const task = new Promise((res, rej)=> {
-      res (productos)
+      res (categoryId !== undefined ? prodFiltro : productos )
     }) 
 
     task
@@ -19,7 +25,7 @@ const Itemlistcontainer = (props) => {
       .catch((rej) => {
         console.log("Error")
       })
-  }, []);
+  }, [categoryId]);
 
   return (
     <div>
