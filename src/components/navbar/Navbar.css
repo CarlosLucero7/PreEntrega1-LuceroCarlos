@@ -20,9 +20,10 @@
 
 .navlink-active{
     text-decoration: none;
+    padding: 7px;
     border: dotted aliceblue;
     border-width: 5px 1.5px;
-    border-radius: 40px 10px; ;
+    border-radius: 50px 25px; ;
     color: aliceblue;
     font-size: 1.25rem;
 }
