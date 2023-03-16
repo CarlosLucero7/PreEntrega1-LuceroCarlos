@@ -18,7 +18,17 @@
     font-size: 1.25rem;
 }
 
+.navlink-active{
+    text-decoration: none;
+    border: dotted aliceblue;
+    border-width: 5px 1.5px;
+    border-radius: 40px 10px; ;
+    color: aliceblue;
+    font-size: 1.25rem;
+}
+
 .lista{
+    list-style: none;
     display: flex;
     justify-content: space-around;
     padding-bottom: 0.5rem;

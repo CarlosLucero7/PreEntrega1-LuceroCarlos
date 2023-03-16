@@ -1,9 +1,9 @@
 
+import Form from '../Form/Form'
+
 const Cart = () => {
   return (
-    <div>
-      <h1>Carro de compras</h1>
-    </div>
+    <div><Form/></div>
   )
 }
 
