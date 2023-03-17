@@ -3,10 +3,12 @@ import Itemlistcontainer from "./components/itemlistcontainer/Itemlistcontainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Cart from './components/Cart/Cart';
+import CarContextProvider from './context/CarContext';
 
 function App() {
   return (
     <BrowserRouter>
+    <CarContextProvider>
       <Navbar />
       <Routes>
         <Route path='/' element={<Itemlistcontainer/>}/>
@@ -19,6 +21,7 @@ function App() {
 
         <Route path='*' element={<h1>404 Not Found</h1>}/>
       </Routes>
+    </CarContextProvider>
     </BrowserRouter>
   );
 }

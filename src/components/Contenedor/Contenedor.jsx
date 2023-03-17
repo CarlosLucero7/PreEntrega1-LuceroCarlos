@@ -1,16 +1,17 @@
+import { useContext } from "react"
 import { Link } from "react-router-dom"
+import { CarContext } from "../../context/CarContext"
 import ItemCount from "../ItemCount/ItemCount"
 
 const Contenedor = ( {prod}) => {
 
+  const {agregarCart} = useContext(CarContext)
   const onAdd = (cantidad) =>{
     const produ = {
-    nombre: prod.nombre,
-    precio: prod.precio,
-    imagen: prod.imagen,
+    ...prod,
     cantidad: cantidad
     }
-    console.log(produ)
+    agregarCart(produ)
   }
   
 
