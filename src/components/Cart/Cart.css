@@ -1,5 +1,14 @@
+.shopCart{
+    display: inline-block;
+    width: 100%;
+}
+
 .itemCart{
-    width: 50%;
+    width: 40%;
     border: solid 1px purple;
     margin: 5px;
+}
+
+.cart{
+    width: 50%;
 }

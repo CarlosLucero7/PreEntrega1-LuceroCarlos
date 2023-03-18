@@ -15,11 +15,31 @@ const CarContextProvider = ({children}) => {
         setCart([])
     }
 
+    const delprod = (id) =>{
+        let newCart = cart.filter(prod => prod.id !== id);
+        setCart(newCart)
+
+    }
+
+    const totalItem = () =>{
+        return cart.length
+    }
+
+    const precioTotal = () =>{
+        const total = cart.reduce((acc, element)=>{
+            return acc + (element.precio * element.cantidad)
+        },0)
+        return total
+    }
+
     let data={
         cart,
         setCart,
         agregarCart,
-        limpiarCart
+        limpiarCart,
+        delprod,
+        totalItem,
+        precioTotal
     }
 
   return (
