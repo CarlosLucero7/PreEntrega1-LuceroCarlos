@@ -29,6 +29,19 @@ const CarContextProvider = ({children}) => {
         const total = cart.reduce((acc, element)=>{
             return acc + (element.precio * element.cantidad)
         },0)
+
+        if(total === 0){
+            return "Su carro de compras esta vacio!"
+        }else{
+            return `El total de su compra es: $`+total
+        }
+    }
+
+    const precioCompra = ()=>{
+        const total = cart.reduce((acc, element)=>{
+            return acc + (element.precio * element.cantidad)
+        },0)
+
         return total
     }
 
@@ -39,7 +52,8 @@ const CarContextProvider = ({children}) => {
         limpiarCart,
         delprod,
         totalItem,
-        precioTotal
+        precioTotal,
+        precioCompra
     }
 
   return (

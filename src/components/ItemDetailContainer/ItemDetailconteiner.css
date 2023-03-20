@@ -1,0 +1,23 @@
+.cardDetail{
+ display: grid;
+ grid-template-rows: 75px 100%;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas: "titulo titulo" "img contenido";
+}
+
+.titulo{
+    grid-area: titulo;
+    margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+
+.imgDetail{
+    height: 300px;
+    margin-inline: auto;
+    grid-area: img;
+}

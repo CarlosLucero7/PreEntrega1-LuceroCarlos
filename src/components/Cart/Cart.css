@@ -1,14 +1,34 @@
 .shopCart{
-    display: inline-block;
-    width: 100%;
+    display: grid;
+    grid-area: titulo;
+    grid-template-rows: 50px 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "titulo titulo" "cart1 cart2";
 }
 
 .itemCart{
-    width: 40%;
     border: solid 1px purple;
     margin: 5px;
 }
 
-.cart{
-    width: 50%;
+.cart1{
+    grid-area: cart1;
+    border-right: 2px solid purple;
+}
+
+.form{
+    margin-left: 1rem;
+}
+
+.cart2{
+    grid-area: cart2;
+    margin-top: 5rem;
+    margin-inline: auto;
+    
+}
+
+.btnCart{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
 }
