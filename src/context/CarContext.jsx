@@ -1,4 +1,5 @@
 import { useState,createContext } from "react"
+import Swal from 'sweetalert2'
 
 export const CarContext = createContext()
 
@@ -9,6 +10,14 @@ const CarContextProvider = ({children}) => {
     const agregarCart = (prod) =>{
         
         setCart([...cart , prod])
+        Swal.fire({
+            position: 'top-end',         
+            width: 300,
+            heigth: 100,
+            title: 'Producto agregado!',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }
 
     const limpiarCart = () =>{

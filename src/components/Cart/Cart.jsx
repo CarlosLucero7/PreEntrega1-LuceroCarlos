@@ -1,12 +1,31 @@
 import { useContext, useState } from "react"
 import { CarContext } from "../../context/CarContext"
 import FormCompra from "../FormCompra/FormCompra"
+import Swal from 'sweetalert2'
 import "./Cart.css"
 
 const Cart = () => {
 
   const {cart, limpiarCart, delprod, precioTotal} = useContext(CarContext)
   const [buy,setBuy]= useState(false)
+
+  const limpAlert = ()=> {
+    Swal.fire({
+      title: 'Seguro que desea vaciar el carrito?',
+      icon: 'question',
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Si, vacialo!',
+      denyButtonText: `No, no estoy seguro`,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire('Se ha vaciado el carrito!', '', 'success')
+        limpiarCart()
+      } else if (result.isDenied) {
+        Swal.fire('El carrrito no se ha vaciado', '', 'warning')
+      }
+    })
+  }
 
     return (
       <div className="shopCart">
@@ -31,7 +50,7 @@ const Cart = () => {
           <h2>{precioTotal()}</h2>
           <div className="btnCart">
           <button onClick={() => setBuy(true)}>Confirmar compra</button>
-          <button onClick={limpiarCart}>Vaciar carrito</button>
+          <button onClick={limpAlert}>Vaciar carrito</button>
           </div>
           
         </div>
